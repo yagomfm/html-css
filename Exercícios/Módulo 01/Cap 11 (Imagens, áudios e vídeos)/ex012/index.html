@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos em HTML5</h1>
+    <p><a href="https://www.pexels.com/pt-br/" target="_blank" type="external">Site para baixar vídeos</a></p>
+    <!--Usar o Handbrake para converter arquivos-->
+    <p>Este vídeo está hospedado no meu próprio servidor.</p> <!--Alto consumo de banda!-->
+    <video width="500" poster="Media/imagem-p.png" controls autoplay loop>
+        <source src="Media/meu-video.mp4.mp4" type="video/mp4" width="500">
+        <source src="Media/meu-video.mp4.m4v" type="video/m4v">
+        <source src="Media/meu-video.mp4.webm" type="video/webm">
+        <source src="Media/meu-video.mp4.ogv" type="video/ogv">
+    </video>
+    <!--MP4 M4V OGV WEBM-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tjZQnk5j6Zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Consome dados direto do youtube-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/757873622?h=95564dbfbf" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--Vimeo: hospeda vídeos de alta qualidade de maneira privada ou pública-->
+</body>
+</html>

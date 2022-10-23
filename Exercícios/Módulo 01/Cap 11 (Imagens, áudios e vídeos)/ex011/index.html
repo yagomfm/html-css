@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanaho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="Imagens/imagem-m.png" type="image/png">
+        <img src="Imagens/imagem-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>
+        <a href="https://studio.youtube.com/channel/UC6RXUbKDRuqFe4gasbniAFQ/music" target="_blank" type="external" >Biblioteca de áudio do youtube</a>
+    </p>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="Media/Keep On Movin' - King Canyon.mp3" controls autoplay></audio> <!--MP3 WAV OGG-->
+    <audio preload="auto" autoplay controls loop>
+        <source src="Media/Keep On Movin' - King Canyon.mp3" type="audio/mpeg">
+        <source src="Media/Keep On Movin' - King Canyon.ogg" type="audio/ogg">
+        <source src="Media/Keep On Movin' - King Canyon.wav" type="audio/wav">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. <a href="Media/Keep On Movin' - King Canyon.mp3">Clique aqui</a> para baixar o arquivo MP3.
+        </p>
+    </audio>
+    <!--Preload indica se o áudio será pré-carregado ou não e aceita 3 valores:
+    Metadata: vai carregar apenas as informações sobre o arquivo
+    None: não vai carregar nada até que o usuário clique no botão play
+    Auto: vai carregar o arquivo de áudio inteiro assim que a página for carregada-->
+</body>
+</html>
