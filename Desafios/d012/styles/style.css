@@ -13,8 +13,8 @@
 }
 
 :root {
-    --font01: Arial, Helvetica, sans-serif;
-    --font02: 'passion', sans-serif;
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'passion', cursive;
     --font03: 'sriracha', cursive;
 }
 
@@ -36,7 +36,7 @@ header {
 }
 header > h1 {
     font-family: var(--font02);
-    font-size: 3em;
+    font-size: 10vw;
     font-variant: small-caps;
     padding-top: 50px;
 }
@@ -52,20 +52,33 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font03);
+    font-size: 3.5vw;
 }
-
+section > p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color: black;
 }
-
 section.imagem {
-    background-color: rgba(0, 0, 0, 0.458);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.438);
 }
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.236);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 1px 0px black;
+}
+section#img01 {
+    background: transparent url('../imagens/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
+}
+section#img02 {
+    background: transparent url('../imagens/background002.jpg') right center no-repeat fixed;
+    background-size: cover;
 }
 
 header a, footer a {
