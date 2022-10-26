@@ -15,7 +15,10 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: none;
 }
+
+
 
 h1 {
     font-family: 'Love', Times, serif;
